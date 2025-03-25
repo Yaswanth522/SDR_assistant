@@ -1,9 +1,9 @@
 import openai
 import os
-from config import load_env_variables
+from dotenv import load_dotenv
 
 # Load environment variables
-load_env_variables()
+load_dotenv()
 
 def get_openai_client():
     """Initialize and return OpenAI client."""

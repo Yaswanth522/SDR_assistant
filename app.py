@@ -1,10 +1,10 @@
 from flask import Flask
 from flask_cors import CORS
-from config import load_env_variables
 from routes import setup_routes
+from dotenv import load_dotenv
 
 # Load environment variables
-load_env_variables()
+load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
