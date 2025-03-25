@@ -16,7 +16,7 @@ def upload_file(file_path, purpose="assistants"):
     return response.id
 
 # Upload the CSV file and get its file ID
-file_path = "Filtered_leads.csv"
+file_path = "Filtered_leads.txt"
 file_id = upload_file(file_path)
 
 print(f"File uploaded successfully. File ID: {file_id}")
